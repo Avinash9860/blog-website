@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "mobile": "bash scripts/mobile-dev.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
