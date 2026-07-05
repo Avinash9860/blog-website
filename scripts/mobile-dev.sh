@@ -6,11 +6,20 @@
 #   npm run mobile -- --hot
 #   npm run mobile -- --port 3000
 #
-# Copy scripts/mobile-dev.sh into any Angular, React, or Node.js project.
+# Copy mobile-dev.sh into any Angular, React, or Node.js project.
+# Place it in the project root OR in scripts/
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$SCRIPT_DIR/package.json" ]; then
+  ROOT_DIR="$SCRIPT_DIR"
+elif [ -f "$SCRIPT_DIR/../package.json" ]; then
+  ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+else
+  printf '\n\033[1;31m[mobile]\033[0m Place this file in the project root or in scripts/\n' >&2
+  exit 1
+fi
 cd "$ROOT_DIR"
 
 PORT="${PORT:-}"
