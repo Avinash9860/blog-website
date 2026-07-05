@@ -1,5 +1,10 @@
 .app-body{ 
     margin-top :150px; 
     min-height:35vh ;
-    
+}
+
+@media (max-width: 767.98px) {
+    .app-body {
+        margin-top: 120px;
+    }
 }

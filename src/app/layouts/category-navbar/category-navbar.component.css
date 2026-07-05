@@ -1,9 +1,22 @@
-nav{
-    margin-top :100px;
-    height: 50px;
-    background-color: var(--navbar-footer-color) ;
+nav {
+    margin-top: 100px;
+    min-height: 50px;
+    background-color: var(--navbar-footer-color);
 }
-.nav-link{
+
+.nav-link {
     color: var(--primary-color);
-   
+}
+
+@media (max-width: 991.98px) {
+    nav {
+        margin-top: 70px;
+        min-height: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
 }

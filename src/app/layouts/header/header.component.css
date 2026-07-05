@@ -1,11 +1,19 @@
-header{
+header {
     height: 100px;
-
 }
-.site-logo{
-    
-    font-size: 1.5rem;
 
+.site-logo {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+    header {
+        height: 70px;
+    }
+
+    .site-logo {
+        font-size: 1.25rem;
+    }
 }
 a{
     text-decoration:none
