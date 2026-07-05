@@ -2,10 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 :root{
-    --primary-color:#41b8bc;
-    --secondary-color:#E5F5EA;
-    --body-text-color:#596392;
-    --navbar-footer-color:#fefafa;
+    --primary-color:#6366f1;
+    --secondary-color:#eef2ff;
+    --body-text-color:#475569;
+    --navbar-footer-color:#f8fafc;
 
 }
 
@@ -26,7 +26,7 @@ body{
 }
 .shadow-effect{
     border: none;
-    box-shadow: 0px 0px 33px -10px rgba(71,114,254,0.3);
+    box-shadow: 0px 0px 33px -10px rgba(99,102,241,0.3);
 }
 .bg-theam{
     background-color: var(--primary-color);
